@@ -1,0 +1,14 @@
+for $zonas in //zona
+for $nombre_zona in $zonas/nombre
+for $zona in $zonas/cod_zona
+order by $nombre_zona
+return 
+<Resultado>
+	{$nombre_zona}
+	<Productos>
+		<Producto>
+		{//produc[cod_zona=$zona]/denominacion|//produc[cod_zona=$zona]/precio|//produc[cod_zona=$zona]/cod_zona}
+		</Producto>
+	</Productos>
+</Resultado>
+

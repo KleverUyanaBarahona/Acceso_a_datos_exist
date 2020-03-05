@@ -1,0 +1,1 @@
+avg(/productos/produc[contains(denominacion,'Micro')]/precio)

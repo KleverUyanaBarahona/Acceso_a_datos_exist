@@ -1,0 +1,11 @@
+for $zonas in //zona
+for $nombre_zona in $zonas/nombre
+for $zona in $zonas/cod_zona
+for $produc in //produc
+let $productos:=$produc
+order by $nombre_zona
+return
+<Resultado>
+<nombre>{data($nombre_zona)}</nombre>
+<producto>{$productos/denominacion}{$productos/precio}{$productos/cod_zona}</producto>
+</Resultado>

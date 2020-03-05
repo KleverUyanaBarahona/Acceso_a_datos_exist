@@ -1,0 +1,1 @@
+//sucursal[count(cuenta[@tipo="AHORRO"])>=3]/concat(@codigo," ",sum(cuenta/saldohaber))

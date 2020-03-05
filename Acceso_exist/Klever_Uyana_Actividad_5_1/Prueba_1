@@ -1,0 +1,1 @@
+string-join((//sucursal/string(@codigo),"&#10;",//sucursal/string(count(cuenta[@tipo="AHORRO"])))," ")

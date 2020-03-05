@@ -1,0 +1,6 @@
+for $zona in  distinct-values(//cod_zona)
+for $pro in //produc[precio=max(//produc[cod_zona=$zona]/precio/number())]/denominacion/text()
+return <resultado>
+<Zona>{$zona}</Zona>
+<Producto_mas_caro>{$pro}</Producto_mas_caro>
+</resultado>

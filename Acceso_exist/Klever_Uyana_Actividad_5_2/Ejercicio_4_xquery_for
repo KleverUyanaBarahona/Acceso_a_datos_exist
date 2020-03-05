@@ -1,0 +1,3 @@
+for $cuentas in //cuenta[@tipo='PENSIONES']
+for $cuenta in $cuentas[aportacion=max(//aportacion)]
+return <Resultado>{$cuenta}</Resultado>

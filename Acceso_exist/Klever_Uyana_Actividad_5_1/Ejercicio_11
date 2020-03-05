@@ -1,0 +1,1 @@
+//sucursal/concat(@codigo," ",count(cuenta[@tipo="AHORRO"]))

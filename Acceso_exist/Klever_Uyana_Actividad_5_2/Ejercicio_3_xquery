@@ -1,0 +1,6 @@
+for $sucur in distinct-values(//@codigo)
+for $n_ahorro in //sucursal[@codigo=$sucur]/count(cuenta[@tipo='AHORRO'])
+return <resultado>
+<Codigo_Sucursal>{$sucur}</Codigo_Sucursal>
+<N_cuentas_tipo_AHORRO>{$n_ahorro}</N_cuentas_tipo_AHORRO>
+</resultado>

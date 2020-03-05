@@ -1,0 +1,11 @@
+for $zonas in //zona
+for $nombre_zona in $zonas/nombre
+for $zona in $zonas/cod_zona
+for $con in count(//produc[cod_zona=$zona])
+order by $nombre_zona
+return <Resultado>
+{$nombre_zona}
+<Numero_produc>{count(//produc[cod_zona=$zona])}</Numero_produc>
+<Numero_produc>{$con}</Numero_produc>
+</Resultado>
+
